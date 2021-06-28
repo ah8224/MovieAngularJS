@@ -1,0 +1,28 @@
+<table class="table" ng-controller="movieCtrl">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Language
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="x in MovieList">
+            <td>
+                {{x["name"]}}
+            </td>
+            <td>
+                {{x["description"]}}
+            </td>
+            <td>
+                {{x["language"]}}
+            </td>
+        </tr>
+    </tbody>
+</table>
